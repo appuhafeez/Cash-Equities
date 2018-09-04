@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.trade.ShareInfo" table="shareinfo">
+    	<id name="securityCode" type="string" column="securitycode" length="15" />
+        <property name="securityName" type="string" column="securityname" length="25" not-null="true" />
+        <property name="securityType" type="string" column="securitytype"  length="5" not-null="true" />
+        <property name="quantityAvailable" type="long" column="quantity" not-null="true" />
+        <property name="priceOfSecurity" type="big_decimal" length="10" precision="2" column="priceofsecurity" not-null="true" />
+        <property name="symbol" type="string" column="SYMBOL"  length="10" not-null="true" />
+         <property name="changedPrice" type="big_decimal" length="10" precision="2" column="changedprice" not-null="true" />
+        </class>
+</hibernate-mapping>

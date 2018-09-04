@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.trade.ShareDetail" table="sharedetail">
+        <id name="id" type="long" column="id">
+                    <generator class="increment"/>
+        </id>
+        <property name="securityName" type="string" column="securityname"  length="25" not-null="true" />
+        <property name="securityCode" type="string" column="securitycode" length="15" not-null="true" />
+        <property name="open" type="big_decimal" precision="2"  length="10" column="securitytype" not-null="true" />
+        <property name="high" type="big_decimal" precision="2"  length="10" column="quantity" not-null="true" />
+        <property name="low" type="big_decimal" precision="2"  length="10" column="priceofsecurity" not-null="true" />
+        <property name="close" type="big_decimal" precision="2" length="10" column="direction" not-null="true" />
+        <property name="timeStamp" type="timestamp" column="timestamp" not-null="true" />
+        <property name="currency" type="string" column="currency"  length="5" not-null="true" />
+        </class>
+</hibernate-mapping>

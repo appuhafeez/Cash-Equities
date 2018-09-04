@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.trade.User" table="user">
+        <id name="userId" type="string" column="userid" length="20"/>
+        <property name="userName" type="string" column="username" length="30"  not-null="true" />
+        <property name="password" type="string" column="password" length="20" not-null="true" />
+        </class>
+</hibernate-mapping>

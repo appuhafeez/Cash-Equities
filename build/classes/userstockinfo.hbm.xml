@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.trade.UserStockInfo" table="userstockinfo">
+        <id name="id" type="long" column="id" >
+                    <generator class="increment" />
+        </id>
+        <property name="userId" type="string" column="userid" length="20" not-null="true" />
+        <property name="securityName" type="string" column="securityname" length="25" not-null="true" />
+        <property name="securityCode" type="string" column="securitycode" length="15" not-null="true" />
+        <property name="securityType" type="string" column="securitytype"  length="5" not-null="true" />
+        <property name="totalQuantity" type="long" column="totalquantity" length="15" not-null="true" />
+        <property name="totalPrice" type="big_decimal" precision="2" column="totalprice" length="15" not-null="true" />
+        </class>
+</hibernate-mapping>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.trade.InProgress" table="inprogress">
+        <id name="orderId" type="long" column="orderid" length="20">
+                    <generator class="increment" />
+        </id>
+        <property name="userId" type="string" column="userid" length="20" not-null="true" />
+        <property name="userName" type="string" column="username" length="25" not-null="true" />
+        <property name="securityName" type="string" column="securityname" length="25" not-null="true" />
+        <property name="securityCode" type="string" column="securitycode" length="10" not-null="true" />
+        <property name="securityType" type="string" column="securitytype" length="5" not-null="true" />
+        <property name="quantity" type="long" column="quantity" length="10" not-null="true" />
+        <property name="priceOfSecurity" type="big_decimal" length="10"  precision="2" column="priceofsecurity" not-null="true" />
+        <property name="timeStamp" type="timestamp" column="timestamp" not-null="true" />
+        <property name="currency" type="string" column="currency" length="5" not-null="true" />
+        <property name="direction" type="string" column="direction" length="10" not-null="true" />
+        <property name="status" type="string" column="status" length="15" not-null="true" />
+        <property name="tradeType" type="string" column="tradetype" length="15" not-null="true" />
+        <property name="totalPrice" type="big_decimal" length="10"  precision="2" column="totalPrice" not-null="true" />
+        <property name="remainingQuantity" type="long" column="remainingquantity" length="10" not-null="true" />
+        
+        </class>
+</hibernate-mapping>

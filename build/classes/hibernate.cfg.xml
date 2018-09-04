@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.mariadb.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/market</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">dbs123</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MariaDB53Dialect</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="hibernate.connection.autocommit">true</property>
+        <mapping resource="user.hbm.xml" />
+        <mapping resource="sharedetail.hbm.xml" />
+                <mapping resource="userdetail.hbm.xml" />
+        
+                <mapping resource="userhistory.hbm.xml" />
+        
+                <mapping resource="shareinfo.hbm.xml" />
+        
+                
+        
+                <mapping resource="inprogress.hbm.xml" />
+                
+                 <mapping resource="userstockinfo.hbm.xml" />
+                  <mapping resource="wallet.hbm.xml" />
+        
+    </session-factory>
+</hibernate-configuration>

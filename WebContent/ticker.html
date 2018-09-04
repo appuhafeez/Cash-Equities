@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 strict//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+
+<HTML>
+
+<HEAD>
+
+  <script type="text/javascript" src="https://cdn-macroaxis.netdna-ssl.com/scripts/minimum.js"></script>
+  <link href="https://cdn-macroaxis.netdna-ssl.com//material/css/app.css" rel="stylesheet">
+  <link href="https://cdn-macroaxis.netdna-ssl.com/static/vendors/noUiSlider/jquery.nouislider.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn-macroaxis.netdna-ssl.com/skins/minimum.css" type="text/css" />
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-87DrmpqHRiY8hPLIr7ByqhPIywuSsjuQAfMXAE0sMUpY3BM7nXjf+mLIUSvhDArs" crossorigin="anonymous">
+
+  <link href="https://cdn-macroaxis.netdna-ssl.com/static/css/override.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .defaultCombo {
+      height: 32px;
+    }
+  </style>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <script async src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+  <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+
+  <script src="https://cdn-macroaxis.netdna-ssl.com/scripts/jquery.modern-ticker.min.js" type="text/javascript"></script>
+  <link href="https://cdn-macroaxis.netdna-ssl.com/skins/modern-ticker.css" type="text/css" rel="stylesheet">
+  <link href="https://cdn-macroaxis.netdna-ssl.com/skins/modern-ticker-theme10.css" type="text/css" rel="stylesheet">
+
+  <style type="text/css">
+    .noindent {
+      list-style-type: none;
+      list-style: none;
+      padding: 0;
+      border: 0px solid #ddd;
+      margin: 0px;
+    }
+
+    li {
+      list-style-type: none;
+      list-style: none;
+      padding: 0;
+      border: 0px solid #ddd;
+      margin: 0px;
+    }
+
+    .mt-controls {
+      margin: 0px;
+      padding: 0px;
+      right: 0px;
+      border: 0px solid red;
+    }
+
+    .mt-label {
+      margin: 0px;
+      width: 95px;
+      padding: 0;
+      padding-left: 2px;
+      padding-top: 1px;
+      background: #eeeddd;
+      border: 0px solid red;
+    }
+
+    .mt-scroll {
+      margin: 0px;
+      padding: 0px;
+
+      border: 0px solid red;
+    }
+
+    .modern-ticker {
+      width: 100%;
+
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .mt-news {
+
+      margin: 0px;
+      padding: 0px;
+      border: 0px solid red;
+    }
+
+    .mt-prev {
+
+      margin: 0px;
+      padding: 0px;
+      border: 0px solid red;
+    }
+
+    .mt-play {
+
+      margin: 0px;
+      padding: 0px;
+      border: 0px solid red;
+    }
+
+    .mt-next {
+      margin: 0px;
+      padding: 0px;
+      border: 0px solid red;
+    }
+  </style>
+
+  <title>Stock Ticker - Macroaxis</title>
+</HEAD>
+
+<body>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    $(function() {
+      // Start ticker initialization code
+      $(".modern-ticker").modernTicker({
+        effect: "scroll",
+        scrollInterval: 20,
+        transitionTime: 500,
+        autoplay: true
+      });
+
+    });
+  </script>
+
+
+  <div id="wrapper" style="padding:0px; margin:0px; border: 0px solid black;background: green;">
+
+
+    <div class="modern-ticker">
+
+
+      <div class="mt-news">
+        <ul>
+          <li class="tickerCell"><a href="/invest/market/^DJI--DOW" target="_blank"> Titan <strong>25558.73</strong> <i class="fa fa-arrow-up c-green"></i> 396.32</a></li>
+          <li class="tickerCell"><a href="/invest/market/^NYA--NYSE" target="_blank"> Eicher Motors <strong>12841.28</strong> <i class="fa fa-arrow-up  c-green"></i> 118.19</a></li>
+          <li class="tickerCell"><a href="/invest/market/^IXIC--Nasdaq" target="_blank"> Bharti Airtel <strong>7806.52</strong> <i class="fa fa-arrow-up  c-green"></i> 32.4</a></li>
+          <li class="tickerCell"><a href="/invest/market/^GSPC--S-and-P-500" target="_blank"> Maruti Udyog <strong>2840.69</strong> <i class="fa fa-arrow-up  c-green"></i> 22.32</a></li>
+          <li class="tickerCell"><a href="/invest/market/^NQGB--NASDAQ-UK" target="_blank"> Cipla <strong>1050.61</strong> <i class="fa fa-arrow-up  c-green"></i> 12.27</a></li>
+          <li class="tickerCell"><a href="/invest/market/^GDAXI--DAX" target="_blank"> TCS <strong>12237.17</strong> <i class="fa fa-arrow-up  c-green"></i> 74.16</a></li>
+          <li class="tickerCell"><a href="/invest/market/000001.SS--Shanghai" target="_blank"> HDFC Bank <strong>2701.62</strong> <i class="fa fa-arrow-down   c-red"></i> -21.64</a></li>
+        </ul>
+      </div>
+      <!-- <div class="mt-controls">
+        <div class="mt-prev"></div>
+        <div class="mt-play"></div>
+        <div class="mt-next"></div>
+      </div> -->
+    </div>
+  </div>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-649901-12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-649901-12');
+  </script>
+
+
+
+
+</body>
+
+</html>
